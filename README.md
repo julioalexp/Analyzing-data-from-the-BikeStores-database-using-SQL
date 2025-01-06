@@ -27,3 +27,20 @@ The dataset can be found at Kaggle.
 
 Link. [BikeStore Dataset](https://www.kaggle.com/datasets/mohamedzrirak/sql-bkestores)
 
+## Business Problems and Solutions
+
+```sql
+SELECT TOP 1 
+    sales.customers.first_name, 
+    SUM(sales.order_items.quantity * sales.order_items.list_price - sales.order_items.list_price * sales.order_items.discount) AS total_sales
+FROM 
+    sales.orders
+INNER JOIN 
+    sales.order_items ON sales.orders.order_id = sales.order_items.order_id
+INNER JOIN 
+    sales.customers ON sales.orders.customer_id = sales.customers.customer_id
+GROUP BY 
+    sales.customers.first_name
+ORDER BY 
+    total_sales DESC;
+```
