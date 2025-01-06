@@ -13,7 +13,7 @@ GROUP BY
 ORDER BY 
     total_sales DESC;
 
--- 2. Currently, Jannette David from the New York branch is no longer with the company. Therefore, we need to deactivate her, and in her place, Venita Daniel—who previously reported to Jannette—should now report to Fabiola Jackson.  
+-- 2. Currently, Jannette David from the New York branch is no longer with the company. Therefore, we need to deactivate her, and in her place, Venita Danielâ€”who previously reported to Jannetteâ€”should now report to Fabiola Jackson.  
 
 UPDATE [sales].[staffs]
 SET 
