@@ -1,3 +1,4 @@
+-- Script
 -- 1. Which customer has generated the highest sales in terms of revenue?
 SELECT TOP 1 
     sales.customers.first_name, 
