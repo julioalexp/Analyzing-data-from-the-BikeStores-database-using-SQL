@@ -79,4 +79,36 @@ Query output
 | Trek Remedy 9.8 - 2017                                | 0        |
 | ...                                                   | ...      |
 
-In order to keep the business running propperly, we need to know about the stock.
+In order to keep the business running properly, we need to know about the stock.
+
+7. Which product category generates the highest revenue?
+   
+```sql
+
+SELECT 
+    production.categories.category_name, 
+    SUM(sales.order_items.quantity * sales.order_items.list_price - sales.order_items.list_price * sales.order_items.discount) AS total_revenue
+FROM 
+    sales.order_items
+INNER JOIN 
+    production.products ON sales.order_items.product_id = production.products.product_id
+INNER JOIN 
+    production.categories ON production.products.category_id = production.categories.category_id
+GROUP BY 
+    production.categories.category_name
+ORDER BY 
+    total_revenue DESC;
+  ```
+  Query Output
+| category_name       | total_revenue |
+|---------------------|---------------|
+| Mountain Bikes      | 2639416.5679  |
+| Road Bikes          | 1725053.6707  |
+| Cruisers Bicycles   | 1032371.5064  |
+| Electric Bikes      | 950571.0729   |
+| Cyclocross Bicycles | 741382.8357   |
+| Comfort Bicycles    | 409040.2985   |
+| Children Bicycles   | 304457.3538   |
+
+Now, the buyer analyst and the decision maker know which products(categories) are essential and are the core of the business...as well the  financial director would know where the money come from to prioritize.
+
