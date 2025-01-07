@@ -50,3 +50,5 @@ Query Output
 | first_name | total_sales |
 |------------|-------------|
 | Sharyn     | 39900.3893  |
+
+With this query we joined 3 different tables to gather a business insight.
