@@ -52,3 +52,31 @@ Query Output
 | Sharyn     | 39900.3893  |
 
 With this query we joined 3 different tables to gather a business insight.
+
+10. How many products are currently low in stock (below 10 units)?
+```sql
+SELECT 
+    production.products.product_name, 
+    production.stocks.quantity
+FROM 
+    production.stocks
+INNER JOIN 
+    production.products ON production.stocks.product_id = production.products.product_id
+WHERE 
+    production.stocks.quantity < 10
+ORDER BY 
+    production.stocks.quantity ASC;
+```
+Query output
+| product_name                                          | quantity |
+|-------------------------------------------------------|----------|
+| Surly Wednesday Frameset - 2016                       | 0        |
+| Surly Ice Cream Truck Frameset - 2016                 | 0        |
+| Trek Remedy 29 Carbon Frameset - 2016                 | 0        |
+| Electra Girl's Hawaii 1 (16-inch) - 2015/2016         | 0        |
+| Trek Farley Alloy Frameset - 2017                     | 0        |
+| Trek Fuel EX 5 27.5 Plus - 2017                       | 0        |
+| Trek Remedy 9.8 - 2017                                | 0        |
+| ...                                                   | ...      |
+
+In order to keep the business running propperly, we need to know about the stock.
