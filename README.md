@@ -112,3 +112,10 @@ ORDER BY
 
 Now, the buyer analyst and the decision maker know which products(categories) are essential and are the core of the business...as well the  financial director would know where the money come from to prioritize.
 
+# Insights
+* Revenue Insights: The top customers and product categories responsible for the majority of the revenue were identified, enabling targeted marketing strategies.
+* Frequent Buyers: The analysis of top customers by order volume highlighted potential loyalty program candidates.
+* Store Performance: Sales revenue variation across stores revealed underperforming locations that may benefit from special promotions.
+*Stock Optimization: Products with low inventory levels were identified, allowing for timely restocking to avoid lost sales.
+
+To see more click here.
