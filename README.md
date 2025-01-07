@@ -118,4 +118,4 @@ Now, the buyer analyst and the decision maker know which products(categories) ar
 * Store Performance: Sales revenue variation across stores revealed underperforming locations that may benefit from special promotions.
 *Stock Optimization: Products with low inventory levels were identified, allowing for timely restocking to avoid lost sales.
 
-To see more click here.
+To see more click [here](https://github.com/julioalexp/Analyzing-data-from-the-BikeStores-database-using-SQL/blob/main/Solutions%20Business%20Questions.sql).
