@@ -28,7 +28,7 @@ The dataset can be found at Kaggle.
 Link. [BikeStore Dataset](https://www.kaggle.com/datasets/mohamedzrirak/sql-bkestores)
 
 ## Business Problems and Solutions
-1. Which customer has generated the highest sales in terms of revenue?
+1. Which customer has generated the highest sales ``Total_sales`` in terms of revenue?
 Top ccustomers by revenue:
 ```sql
 SELECT TOP 1 
